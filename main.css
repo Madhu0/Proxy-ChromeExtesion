@@ -1,0 +1,12 @@
+body{
+  background: lightblue;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+ul{
+  margin-left: -15px;
+}
+li{
+  cursor: pointer;
+}

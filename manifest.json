@@ -1,0 +1,27 @@
+{
+  "name": "Extension!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "My first Chrome extension.",
+
+  "background":{
+    "scripts": [
+      "script1.js"
+    ],
+    "persistent": true
+  },
+
+  "browser_action": {
+    "default_icon": "mp4-icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Madhu"
+  },
+
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "*://*/*",
+    "webRequestBlocking",
+    "storage"
+  ]
+}
