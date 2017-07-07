@@ -14,7 +14,7 @@ function generateUrlPattern(url) {
 function redirect(details){
   // console.log("Request Details", details);
   return {
-    redirectUrl: 'https://www.google.co.in',
+    redirectUrl: 'http://localhost:8081',
   };
 }
 
@@ -39,7 +39,7 @@ function registerListeners(urls){
   ]);
 
   chrome.webRequest.onBeforeSendHeaders.addListener(addTargetHeader, {
-    urls: urlPatterns,
+    urls: ['*://localhost/*'],
   }, [
     "blocking"
   ]);
